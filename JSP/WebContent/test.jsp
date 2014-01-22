@@ -25,7 +25,7 @@ k=i+j;
 // out.println("Value of k is: " + k);
 %>
 
-The value of k is: <%=k %>
+The value of k is: <%=k%>
 
 <%
 int x;
@@ -33,13 +33,13 @@ x=add(35643, 87658);
 %>
 
 <br>
-The value of x is: <%=x %>
+The value of x is: <%=x%>
 
 <%
 for (i=0; i<5; i++) {
 	// out.println("<br> i = " +i);
 %>
-<br> The value of i is: <%=i %>
+<br> The value of i is: <%=i%>
 	
 <%} // end for loop %>
 
