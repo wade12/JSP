@@ -12,15 +12,19 @@
 	String userName = request.getParameter("name");
 	if (userName != null) {
 		session.setAttribute("sessionUserName", userName);
-		application.setAttribute("applicationUserName", userName);
-		
+		// application.setAttribute("applicationUserName", userName);
+		pageContext.setAttribute("pageContextUserName", userName);
+		pageContext.setAttribute("applicationUserName", userName, PageContext.APPLICATION_SCOPE);
+		pageContext.findAttribute("name");
 	} // end if
 %>
 <br>
 User Name in the request object is: <%=userName %>
 <br>
-User Name in the request object is:	<%=session.getAttribute("sessionUserName") %>
+User Name in the session object is:	<%=session.getAttribute("sessionUserName") %>
 <br>
-User Name in the request object is: <%=application.getAttribute("applicationUserName") %>
+User Name in the application context object is: <%=application.getAttribute("applicationUserName") %>
+<br>
+User Name in the page context object is: <%=pageContext.getAttribute("pageContextUserName") %>
 </body>
 </html>
