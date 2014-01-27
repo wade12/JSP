@@ -6,9 +6,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Init Page</title>
 </head>
-<body>
 
+<%!
+	public void jspInit() {
+		String defaultUser = getServletConfig().getInitParameter("defaultUser");
+		ServletContext context = getServletContext();
+		context.setAttribute("defaultUser", defaultUser);
+	} // end method jspInit
+%>
+
+<body>
 The default user from the Servlet Config is: <%getServletConfig().getInitParameter("defaultUser");%>
 
+The value in the Servlet Context is: <%getServletContext().getAttribute("defaultUser");%>
 </body>
 </html>
