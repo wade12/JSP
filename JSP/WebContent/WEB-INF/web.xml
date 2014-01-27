@@ -25,7 +25,7 @@
   <!--  initpage.jsp code below -->
   <servlet>
   		<servlet-name>InitJSP</servlet-name>
-  		<jsp-file>/inipage.jsp</jsp-file>
+  		<jsp-file>/initpage.jsp</jsp-file>
   			<init-param>
   				<param-name>defaultUser</param-name>
   				<param-value>Default User Name</param-value>
@@ -33,6 +33,6 @@
   </servlet>
   <servlet-mapping>
   		<servlet-name>InitJSP</servlet-name>
-  		<url-pattern>/inipage.jsp</url-pattern>
+  		<url-pattern>/initpage.jsp</url-pattern>
   </servlet-mapping>
 </web-app>

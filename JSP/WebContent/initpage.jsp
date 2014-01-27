@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Init Page</title>
 </head>
 <body>
+
+The default user from the Servlet Config is: <%getServletConfig().getInitParameter("defaultUser");%>
 
 </body>
 </html>
