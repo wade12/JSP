@@ -12,16 +12,6 @@
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
   
-  <!--  xml servlet code below -->
-  <servlet>
-  		<servlet-name>xmlServlet</servlet-name>
-  		<servlet-class>com.wade12.XmlServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  		<servlet-name>xmlServlet</servlet-name>
-  		<url-pattern>/xmlServletPath</url-pattern>
-  </servlet-mapping>
-  
   <!--  initpage.jsp code below -->
   <servlet>
   		<servlet-name>InitJSP</servlet-name>
@@ -35,4 +25,5 @@
   		<servlet-name>InitJSP</servlet-name>
   		<url-pattern>/initpage.jsp</url-pattern>
   </servlet-mapping>
+  
 </web-app>

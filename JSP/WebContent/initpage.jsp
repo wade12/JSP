@@ -16,8 +16,8 @@
 %>
 
 <body>
-The default user from the Servlet Config is: <%getServletConfig().getInitParameter("defaultUser");%>
-
-The value in the Servlet Context is: <%getServletContext().getAttribute("defaultUser");%>
+The default user from the Servlet Config is: <%=getServletConfig().getInitParameter("defaultUser")%>
+<br>
+The value in the Servlet Context is: <%=getServletContext().getAttribute("defaultUser")%>
 </body>
 </html>
